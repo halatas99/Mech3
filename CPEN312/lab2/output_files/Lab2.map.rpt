@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab2
-Sun Feb 10 20:15:17 2019
+Sun Feb 10 23:59:57 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,17 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Port Connectivity Checks: "BCDto7Seg:u5"
+ 11. Port Connectivity Checks: "BinAdder:u3"
+ 12. Port Connectivity Checks: "GetDisp7Bits:u1|BCDto7Seg:u2"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -33,22 +43,27 @@ refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Sun Feb 10 20:15:17 2019           ;
-; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name               ; Lab2                                        ;
-; Top-level Entity Name       ; Lab2                                        ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun Feb 10 23:59:57 2019       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; Lab2                                        ;
+; Top-level Entity Name           ; Lab2                                        ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 16                                          ;
+; Total pins                      ; 64                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -147,11 +162,165 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
 +----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                 ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                          ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
+; Lab2.vhd                         ; yes             ; User VHDL File  ; C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                      ;
++---------------------------------------------+--------------------+
+; Resource                                    ; Usage              ;
++---------------------------------------------+--------------------+
+; Estimate of Logic utilization (ALMs needed) ; 109                ;
+;                                             ;                    ;
+; Combinational ALUT usage for logic          ; 180                ;
+;     -- 7 input functions                    ; 18                 ;
+;     -- 6 input functions                    ; 18                 ;
+;     -- 5 input functions                    ; 71                 ;
+;     -- 4 input functions                    ; 34                 ;
+;     -- <=3 input functions                  ; 39                 ;
+;                                             ;                    ;
+; Dedicated logic registers                   ; 16                 ;
+;                                             ;                    ;
+; I/O pins                                    ; 64                 ;
+;                                             ;                    ;
+; Total DSP Blocks                            ; 0                  ;
+;                                             ;                    ;
+; Maximum fan-out node                        ; BinAdder:u3|Add1~1 ;
+; Maximum fan-out                             ; 35                 ;
+; Total fan-out                               ; 983                ;
+; Average fan-out                             ; 3.03               ;
++---------------------------------------------+--------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                ; Entity Name  ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------+--------------+--------------+
+; |Lab2                      ; 180 (0)             ; 16 (0)                    ; 0                 ; 0          ; 64   ; 0            ; |Lab2                              ; Lab2         ; work         ;
+;    |BCDto7Seg:u5|          ; 47 (47)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Lab2|BCDto7Seg:u5                 ; BCDto7Seg    ; work         ;
+;    |BinAdder:u3|           ; 39 (39)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Lab2|BinAdder:u3                  ; BinAdder     ; work         ;
+;    |GetDisp7Bits:u1|       ; 47 (0)              ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Lab2|GetDisp7Bits:u1              ; GetDisp7Bits ; work         ;
+;       |BCDto7Seg:u2|       ; 47 (47)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Lab2|GetDisp7Bits:u1|BCDto7Seg:u2 ; BCDto7Seg    ; work         ;
+;       |GetBin:u1|          ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Lab2|GetDisp7Bits:u1|GetBin:u1    ; GetBin       ; work         ;
+;    |GetDisp7Bits:u2|       ; 47 (0)              ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Lab2|GetDisp7Bits:u2              ; GetDisp7Bits ; work         ;
+;       |BCDto7Seg:u2|       ; 47 (47)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Lab2|GetDisp7Bits:u2|BCDto7Seg:u2 ; BCDto7Seg    ; work         ;
+;       |GetBin:u1|          ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Lab2|GetDisp7Bits:u2|GetBin:u1    ; GetBin       ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; BinAdder:u3|sumtemptemp[8]                         ; SW9                 ; yes                    ;
+; BinAdder:u3|sumtemptemp[1]                         ; SW9                 ; yes                    ;
+; BinAdder:u3|sumtemptemp[2]                         ; SW9                 ; yes                    ;
+; BinAdder:u3|sumtemptemp[3]                         ; SW9                 ; yes                    ;
+; BinAdder:u3|sumtemptemp[4]                         ; SW9                 ; yes                    ;
+; BinAdder:u3|sumtemptemp[5]                         ; SW9                 ; yes                    ;
+; BinAdder:u3|sumtemptemp[6]                         ; SW9                 ; yes                    ;
+; BinAdder:u3|sumtemptemp[7]                         ; SW9                 ; yes                    ;
+; BinAdder:u3|sumtemptemp[0]                         ; SW9                 ; yes                    ;
+; Number of user-specified and inferred latches = 9  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 16    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BCDto7Seg:u5"                                                                           ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------+
+; Port Connectivity Checks: "BinAdder:u3" ;
++------+-------+----------+---------------+
+; Port ; Type  ; Severity ; Details       ;
++------+-------+----------+---------------+
+; cin  ; Input ; Info     ; Stuck at GND  ;
++------+-------+----------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "GetDisp7Bits:u1|BCDto7Seg:u2"                                                                                ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                  ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; overflow ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 16                          ;
+;     plain             ; 16                          ;
+; arriav_lcell_comb     ; 181                         ;
+;     arith             ; 26                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 8                           ;
+;         2 data inputs ; 1                           ;
+;         4 data inputs ; 16                          ;
+;     extend            ; 18                          ;
+;         7 data inputs ; 18                          ;
+;     normal            ; 137                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 19                          ;
+;         4 data inputs ; 18                          ;
+;         5 data inputs ; 71                          ;
+;         6 data inputs ; 18                          ;
+; boundary_port         ; 64                          ;
+;                       ;                             ;
+; Max LUT depth         ; 5.70                        ;
+; Average LUT depth     ; 3.77                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -160,20 +329,63 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Feb 10 20:15:09 2019
+    Info: Processing started: Sun Feb 10 23:59:46 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2 -c Lab2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file de0_cv_golden_top.v
     Info (12023): Found entity 1: DE0_CV_golden_top File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/DE0_CV_golden_top.v Line: 54
-Error (10500): VHDL syntax error at Lab2.vhd(123) near text "port";  expecting "(", or "'", or "." File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 123
-Error (10500): VHDL syntax error at Lab2.vhd(123) near text ";";  expecting ":=", or "<=" File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 123
-Error (10523): Ignored construct naturalTo7seg at Lab2.vhd(136) due to previous errors File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 136
-Info (12021): Found 0 design units, including 0 entities, in source file lab2.vhd
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 1 warning
-    Error: Peak virtual memory: 4857 megabytes
-    Error: Processing ended: Sun Feb 10 20:15:17 2019
-    Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:19
+Info (12021): Found 14 design units, including 7 entities, in source file lab2.vhd
+    Info (12022): Found design unit 1: Lab2-a File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 20
+    Info (12022): Found design unit 2: GetBin-a File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 140
+    Info (12022): Found design unit 3: BCDto7Seg-a File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 174
+    Info (12022): Found design unit 4: GetDisp7Bits-a File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 392
+    Info (12022): Found design unit 5: BinAdder-a File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 439
+    Info (12022): Found design unit 6: GetBinbcd-a File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 557
+    Info (12022): Found design unit 7: GetDisp7BitsBCD-a File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 590
+    Info (12023): Found entity 1: Lab2 File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 5
+    Info (12023): Found entity 2: GetBin File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 130
+    Info (12023): Found entity 3: BCDto7Seg File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 164
+    Info (12023): Found entity 4: GetDisp7Bits File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 381
+    Info (12023): Found entity 5: BinAdder File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 427
+    Info (12023): Found entity 6: GetBinbcd File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 547
+    Info (12023): Found entity 7: GetDisp7BitsBCD File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 579
+Info (12127): Elaborating entity "Lab2" for the top level hierarchy
+Info (12128): Elaborating entity "GetDisp7Bits" for hierarchy "GetDisp7Bits:u1" File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 103
+Info (12128): Elaborating entity "GetBin" for hierarchy "GetDisp7Bits:u1|GetBin:u1" File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 416
+Info (12128): Elaborating entity "BCDto7Seg" for hierarchy "GetDisp7Bits:u1|BCDto7Seg:u2" File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 417
+Info (12128): Elaborating entity "BinAdder" for hierarchy "BinAdder:u3" File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 110
+Warning (10492): VHDL Process Statement warning at Lab2.vhd(448): signal "byteBtemp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 448
+Warning (10492): VHDL Process Statement warning at Lab2.vhd(452): signal "byteBtemp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 452
+Warning (10492): VHDL Process Statement warning at Lab2.vhd(453): signal "sumtemptemp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 453
+Warning (10492): VHDL Process Statement warning at Lab2.vhd(454): signal "byteBtemp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 454
+Warning (10492): VHDL Process Statement warning at Lab2.vhd(457): signal "byteBtemp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 457
+Warning (10492): VHDL Process Statement warning at Lab2.vhd(462): signal "sumtemp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 462
+Warning (10492): VHDL Process Statement warning at Lab2.vhd(463): signal "sumtemp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 463
+Warning (10631): VHDL Process Statement warning at Lab2.vhd(444): inferring latch(es) for signal or variable "sumtemptemp", which holds its previous value in one or more paths through the process File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 444
+Info (10041): Inferred latch for "sumtemptemp[0]" at Lab2.vhd(444) File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 444
+Info (10041): Inferred latch for "sumtemptemp[1]" at Lab2.vhd(444) File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 444
+Info (10041): Inferred latch for "sumtemptemp[2]" at Lab2.vhd(444) File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 444
+Info (10041): Inferred latch for "sumtemptemp[3]" at Lab2.vhd(444) File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 444
+Info (10041): Inferred latch for "sumtemptemp[4]" at Lab2.vhd(444) File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 444
+Info (10041): Inferred latch for "sumtemptemp[5]" at Lab2.vhd(444) File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 444
+Info (10041): Inferred latch for "sumtemptemp[6]" at Lab2.vhd(444) File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 444
+Info (10041): Inferred latch for "sumtemptemp[7]" at Lab2.vhd(444) File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 444
+Info (10041): Inferred latch for "sumtemptemp[8]" at Lab2.vhd(444) File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 444
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW8" File: C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/Lab2.vhd Line: 9
+Info (21057): Implemented 260 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 52 output pins
+    Info (21061): Implemented 196 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4885 megabytes
+    Info: Processing ended: Sun Feb 10 23:59:57 2019
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:21
 
 

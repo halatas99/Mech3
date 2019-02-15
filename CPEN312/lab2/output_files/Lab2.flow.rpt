@@ -1,5 +1,5 @@
 Flow report for Lab2
-Sun Feb 10 20:15:17 2019
+Mon Feb 11 00:00:39 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,24 +37,29 @@ refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Flow Summary                                                              ;
-+-----------------------------+---------------------------------------------+
-; Flow Status                 ; Flow Failed - Sun Feb 10 20:15:17 2019      ;
-; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name               ; Lab2                                        ;
-; Top-level Entity Name       ; Lab2                                        ;
-; Family                      ; Cyclone V                                   ;
-; Device                      ; 5CEBA4F23C7                                 ;
-; Timing Models               ; Final                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Mon Feb 11 00:00:33 2019       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; Lab2                                        ;
+; Top-level Entity Name           ; Lab2                                        ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CEBA4F23C7                                 ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 109 / 18,480 ( < 1 % )                      ;
+; Total registers                 ; 16                                          ;
+; Total pins                      ; 64 / 224 ( 29 % )                           ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
+; Total DSP Blocks                ; 0 / 66 ( 0 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0 / 4 ( 0 % )                               ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -62,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/10/2019 20:15:10 ;
+; Start date & time ; 02/10/2019 23:59:47 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab2                ;
 +-------------------+---------------------+
@@ -73,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 79349036780004.154985850915056         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 79349036780004.154987198717480         ; --            ; --          ; --         ;
 ; FITTER_EFFORT                       ; Standard Fit                           ; Auto Fit      ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
@@ -96,8 +101,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4857 MB             ; 00:00:19                           ;
-; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:19                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4885 MB             ; 00:00:21                           ;
+; Fitter               ; 00:00:29     ; 1.0                     ; 6477 MB             ; 00:01:27                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 4828 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.2                     ; 5111 MB             ; 00:00:06                           ;
+; Total                ; 00:00:49     ; --                      ; --                  ; 00:01:58                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -107,6 +115,9 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; LAPTOP-PD1BGTJU  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; LAPTOP-PD1BGTJU  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; LAPTOP-PD1BGTJU  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; LAPTOP-PD1BGTJU  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -114,6 +125,9 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off Lab2 -c Lab2
+quartus_fit --read_settings_files=off --write_settings_files=off Lab2 -c Lab2
+quartus_asm --read_settings_files=off --write_settings_files=off Lab2 -c Lab2
+quartus_sta Lab2 -c Lab2
 
 
 
