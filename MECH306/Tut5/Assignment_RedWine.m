@@ -33,17 +33,6 @@ v11 = .47;
 % The 5 variables with highest correlation score are v11, v2, v10, v8, v3
 %}
 redWine_sigvars = [redWine(:,2) redWine(:,3) redWine(:,8) redWine(:,10) redWine(:,11) redWine(:,12)];
-count = 0;
-yee = redWine(:,12);
-disp(yee);
-%{
-for n = 1:1000
-    if 3 == yee(n, 1)
-        count = count+1;
-    end
-end
-%}
-disp(count);
 %% 3. Train machine learning model in the Classification App
 % Examine plots within the app
 % And export the model as trainedModel
@@ -53,7 +42,7 @@ disp(count);
 %% 4. Make prediction on the validation data set using the exported model
 % >>>>> IMPORTANT !!! <<<<<<<<<<<<
 % Change the string to your student ID below:
-StudentID = '63205165'; % NO ID, NO MAKR!!
+StudentID = '16131161'; % NO ID, NO MAKR!!
 % >>>>> IMPORTANT !!! <<<<<<<<<<<<
 
 validation = readtable("validRWpredictors.csv");% load the validation data set
