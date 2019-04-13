@@ -3,83 +3,83 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'SW9'
-Slack : -6.387
-TNS   : -48.625
+Slack : -10.929
+TNS   : -89.410
 
 Type  : Slow 1100mV 85C Model Hold 'SW9'
-Slack : 0.829
+Slack : 0.772
 TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'PB0'
-Slack : -0.538
-TNS   : -6.304
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'PB1'
 Slack : -0.538
-TNS   : -6.296
+TNS   : -6.353
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'PB0'
+Slack : -0.538
+TNS   : -6.320
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'SW9'
-Slack : 0.204
+Slack : 0.150
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'SW9'
-Slack : -6.446
-TNS   : -49.484
+Slack : -10.815
+TNS   : -88.733
 
 Type  : Slow 1100mV 0C Model Hold 'SW9'
-Slack : 0.856
+Slack : 0.666
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'PB1'
 Slack : -0.538
-TNS   : -6.740
+TNS   : -6.343
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'PB0'
 Slack : -0.538
-TNS   : -6.481
+TNS   : -6.341
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'SW9'
-Slack : 0.223
+Slack : 0.079
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'SW9'
-Slack : -2.713
-TNS   : -18.910
+Slack : -4.951
+TNS   : -39.228
 
 Type  : Fast 1100mV 85C Model Hold 'SW9'
-Slack : 0.351
+Slack : 0.425
 TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'PB0'
-Slack : -0.062
-TNS   : -0.486
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'PB1'
-Slack : -0.060
-TNS   : -0.472
+Slack : -0.274
+TNS   : -2.303
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'PB0'
+Slack : -0.245
+TNS   : -2.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'SW9'
-Slack : -0.035
-TNS   : -0.254
+Slack : -0.125
+TNS   : -1.673
 
 Type  : Fast 1100mV 0C Model Setup 'SW9'
-Slack : -2.430
-TNS   : -16.783
+Slack : -4.571
+TNS   : -36.419
 
 Type  : Fast 1100mV 0C Model Hold 'SW9'
-Slack : 0.332
+Slack : 0.355
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'PB0'
-Slack : -0.077
-TNS   : -0.606
-
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'PB1'
-Slack : -0.073
-TNS   : -0.576
+Slack : -0.277
+TNS   : -2.326
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'PB0'
+Slack : -0.252
+TNS   : -2.075
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'SW9'
-Slack : -0.026
-TNS   : -0.122
+Slack : -0.124
+TNS   : -1.633
 
 ------------------------------------------------------------

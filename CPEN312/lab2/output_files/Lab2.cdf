@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5CEBA4F23) Path("C:/Users/Frienddo/Desktop/Mech3/CPEN312/lab2/output_files/") File("Lab2.sof") MfrSpec(OpMask(1));
+		Device PartName(5CEBA4F23) Path("C:/Users/Frienddo/Desktop/Lab2/output_files/") File("Lab2.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

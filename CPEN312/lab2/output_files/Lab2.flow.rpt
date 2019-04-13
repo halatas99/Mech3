@@ -1,5 +1,5 @@
 Flow report for Lab2
-Mon Feb 11 00:00:39 2019
+Mon Feb 11 09:52:13 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,14 +40,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Feb 11 00:00:33 2019       ;
+; Flow Status                     ; Successful - Mon Feb 11 09:51:59 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Lab2                                        ;
-; Top-level Entity Name           ; Lab2                                        ;
+; Top-level Entity Name           ; lab21                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 109 / 18,480 ( < 1 % )                      ;
+; Logic utilization (in ALMs)     ; 95 / 18,480 ( < 1 % )                       ;
 ; Total registers                 ; 16                                          ;
 ; Total pins                      ; 64 / 224 ( 29 % )                           ;
 ; Total virtual pins              ; 0                                           ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/10/2019 23:59:47 ;
+; Start date & time ; 02/11/2019 09:50:02 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab2                ;
 +-------------------+---------------------+
@@ -78,21 +78,20 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 79349036780004.154987198717480         ; --            ; --          ; --         ;
-; FITTER_EFFORT                       ; Standard Fit                           ; Auto Fit      ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 79349036780004.154990740107472         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
-; OPTIMIZATION_TECHNIQUE              ; Speed                                  ; Balanced      ; --          ; --         ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --         ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --         ;
 ; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --            ; --          ; --         ;
 ; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; Lab21       ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; Lab21       ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; Lab21       ; Top        ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
+; TOP_LEVEL_ENTITY                    ; Lab21                                  ; Lab2          ; --          ; --         ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
 
@@ -101,11 +100,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4885 MB             ; 00:00:21                           ;
-; Fitter               ; 00:00:29     ; 1.0                     ; 6477 MB             ; 00:01:27                           ;
-; Assembler            ; 00:00:05     ; 1.0                     ; 4828 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.2                     ; 5111 MB             ; 00:00:06                           ;
-; Total                ; 00:00:49     ; --                      ; --                  ; 00:01:58                           ;
+; Analysis & Synthesis ; 00:00:24     ; 1.0                     ; 4897 MB             ; 00:00:48                           ;
+; Fitter               ; 00:01:15     ; 1.0                     ; 6543 MB             ; 00:01:58                           ;
+; Assembler            ; 00:00:14     ; 1.0                     ; 4832 MB             ; 00:00:10                           ;
+; Timing Analyzer      ; 00:00:12     ; 1.2                     ; 5107 MB             ; 00:00:11                           ;
+; Total                ; 00:02:05     ; --                      ; --                  ; 00:03:07                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

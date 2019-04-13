@@ -1,0 +1,19 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity lab21 is 
+	port
+	(
+	PB3	: in STD_LOGIC;
+	LED	: out STD_Logic
+	);
+end lab21;
+
+architecture test of lab21 is
+	
+begin
+	LED <= PB3;
+end test;
+
+

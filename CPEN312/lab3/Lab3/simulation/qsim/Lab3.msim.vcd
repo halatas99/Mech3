@@ -1,0 +1,342 @@
+$comment
+	File created using the following command:
+		vcd file Lab3.msim.vcd -direction
+$end
+$date
+	Fri Feb 01 19:59:41 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module lab3_vhd_vec_tst $end
+$var wire 1 ! CLOCK_50 $end
+$var wire 1 " HEX00 $end
+$var wire 1 # HEX01 $end
+$var wire 1 $ HEX02 $end
+$var wire 1 % HEX03 $end
+$var wire 1 & HEX04 $end
+$var wire 1 ' HEX05 $end
+$var wire 1 ( HEX06 $end
+$var wire 1 ) HEX10 $end
+$var wire 1 * HEX11 $end
+$var wire 1 + HEX12 $end
+$var wire 1 , HEX13 $end
+$var wire 1 - HEX14 $end
+$var wire 1 . HEX15 $end
+$var wire 1 / HEX16 $end
+$var wire 1 0 HEX20 $end
+$var wire 1 1 HEX21 $end
+$var wire 1 2 HEX22 $end
+$var wire 1 3 HEX23 $end
+$var wire 1 4 HEX24 $end
+$var wire 1 5 HEX25 $end
+$var wire 1 6 HEX26 $end
+$var wire 1 7 HEX30 $end
+$var wire 1 8 HEX31 $end
+$var wire 1 9 HEX32 $end
+$var wire 1 : HEX33 $end
+$var wire 1 ; HEX34 $end
+$var wire 1 < HEX35 $end
+$var wire 1 = HEX36 $end
+$var wire 1 > HEX40 $end
+$var wire 1 ? HEX41 $end
+$var wire 1 @ HEX42 $end
+$var wire 1 A HEX43 $end
+$var wire 1 B HEX44 $end
+$var wire 1 C HEX45 $end
+$var wire 1 D HEX46 $end
+$var wire 1 E HEX50 $end
+$var wire 1 F HEX51 $end
+$var wire 1 G HEX52 $end
+$var wire 1 H HEX53 $end
+$var wire 1 I HEX54 $end
+$var wire 1 J HEX55 $end
+$var wire 1 K HEX56 $end
+$var wire 1 L LED0 $end
+$var wire 1 M LED1 $end
+$var wire 1 N LED2 $end
+$var wire 1 O LED3 $end
+$var wire 1 P LED4 $end
+$var wire 1 Q LED5 $end
+$var wire 1 R LED6 $end
+$var wire 1 S LED7 $end
+$var wire 1 T LED8 $end
+$var wire 1 U LED9 $end
+$var wire 1 V PB0 $end
+$var wire 1 W PB1 $end
+$var wire 1 X PB2 $end
+$var wire 1 Y PB3 $end
+$var wire 1 Z SW0 $end
+$var wire 1 [ SW1 $end
+$var wire 1 \ SW2 $end
+$var wire 1 ] SW3 $end
+$var wire 1 ^ SW4 $end
+$var wire 1 _ SW5 $end
+$var wire 1 ` SW6 $end
+$var wire 1 a SW7 $end
+$var wire 1 b SW8 $end
+$var wire 1 c SW9 $end
+
+$scope module i1 $end
+$var wire 1 d gnd $end
+$var wire 1 e vcc $end
+$var wire 1 f unknown $end
+$var wire 1 g devoe $end
+$var wire 1 h devclrn $end
+$var wire 1 i devpor $end
+$var wire 1 j ww_devoe $end
+$var wire 1 k ww_devclrn $end
+$var wire 1 l ww_devpor $end
+$var wire 1 m ww_PB0 $end
+$var wire 1 n ww_PB1 $end
+$var wire 1 o ww_PB2 $end
+$var wire 1 p ww_PB3 $end
+$var wire 1 q ww_CLOCK_50 $end
+$var wire 1 r ww_SW0 $end
+$var wire 1 s ww_SW1 $end
+$var wire 1 t ww_SW2 $end
+$var wire 1 u ww_SW3 $end
+$var wire 1 v ww_SW4 $end
+$var wire 1 w ww_SW5 $end
+$var wire 1 x ww_SW6 $end
+$var wire 1 y ww_SW7 $end
+$var wire 1 z ww_SW8 $end
+$var wire 1 { ww_SW9 $end
+$var wire 1 | ww_HEX00 $end
+$var wire 1 } ww_HEX01 $end
+$var wire 1 ~ ww_HEX02 $end
+$var wire 1 !! ww_HEX03 $end
+$var wire 1 "! ww_HEX04 $end
+$var wire 1 #! ww_HEX05 $end
+$var wire 1 $! ww_HEX06 $end
+$var wire 1 %! ww_HEX10 $end
+$var wire 1 &! ww_HEX11 $end
+$var wire 1 '! ww_HEX12 $end
+$var wire 1 (! ww_HEX13 $end
+$var wire 1 )! ww_HEX14 $end
+$var wire 1 *! ww_HEX15 $end
+$var wire 1 +! ww_HEX16 $end
+$var wire 1 ,! ww_HEX20 $end
+$var wire 1 -! ww_HEX21 $end
+$var wire 1 .! ww_HEX22 $end
+$var wire 1 /! ww_HEX23 $end
+$var wire 1 0! ww_HEX24 $end
+$var wire 1 1! ww_HEX25 $end
+$var wire 1 2! ww_HEX26 $end
+$var wire 1 3! ww_HEX30 $end
+$var wire 1 4! ww_HEX31 $end
+$var wire 1 5! ww_HEX32 $end
+$var wire 1 6! ww_HEX33 $end
+$var wire 1 7! ww_HEX34 $end
+$var wire 1 8! ww_HEX35 $end
+$var wire 1 9! ww_HEX36 $end
+$var wire 1 :! ww_HEX40 $end
+$var wire 1 ;! ww_HEX41 $end
+$var wire 1 <! ww_HEX42 $end
+$var wire 1 =! ww_HEX43 $end
+$var wire 1 >! ww_HEX44 $end
+$var wire 1 ?! ww_HEX45 $end
+$var wire 1 @! ww_HEX46 $end
+$var wire 1 A! ww_HEX50 $end
+$var wire 1 B! ww_HEX51 $end
+$var wire 1 C! ww_HEX52 $end
+$var wire 1 D! ww_HEX53 $end
+$var wire 1 E! ww_HEX54 $end
+$var wire 1 F! ww_HEX55 $end
+$var wire 1 G! ww_HEX56 $end
+$var wire 1 H! ww_LED0 $end
+$var wire 1 I! ww_LED1 $end
+$var wire 1 J! ww_LED2 $end
+$var wire 1 K! ww_LED3 $end
+$var wire 1 L! ww_LED4 $end
+$var wire 1 M! ww_LED5 $end
+$var wire 1 N! ww_LED6 $end
+$var wire 1 O! ww_LED7 $end
+$var wire 1 P! ww_LED8 $end
+$var wire 1 Q! ww_LED9 $end
+$var wire 1 R! \PB0~input_o\ $end
+$var wire 1 S! \PB1~input_o\ $end
+$var wire 1 T! \PB2~input_o\ $end
+$var wire 1 U! \PB3~input_o\ $end
+$var wire 1 V! \CLOCK_50~input_o\ $end
+$var wire 1 W! \SW0~input_o\ $end
+$var wire 1 X! \SW1~input_o\ $end
+$var wire 1 Y! \SW2~input_o\ $end
+$var wire 1 Z! \SW3~input_o\ $end
+$var wire 1 [! \SW4~input_o\ $end
+$var wire 1 \! \SW5~input_o\ $end
+$var wire 1 ]! \SW6~input_o\ $end
+$var wire 1 ^! \SW7~input_o\ $end
+$var wire 1 _! \SW8~input_o\ $end
+$var wire 1 `! \SW9~input_o\ $end
+$var wire 1 a! \~QUARTUS_CREATED_GND~I_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+0/
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+xV
+xW
+xX
+xY
+xZ
+x[
+x\
+x]
+x^
+x_
+x`
+xa
+xb
+xc
+0d
+1e
+xf
+1g
+1h
+1i
+1j
+1k
+1l
+xm
+xn
+xo
+xp
+0q
+xr
+xs
+xt
+xu
+xv
+xw
+xx
+xy
+xz
+x{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+0-!
+0.!
+0/!
+00!
+01!
+02!
+03!
+04!
+05!
+06!
+07!
+08!
+09!
+0:!
+0;!
+0<!
+0=!
+0>!
+0?!
+0@!
+0A!
+0B!
+0C!
+0D!
+0E!
+0F!
+0G!
+0H!
+0I!
+0J!
+0K!
+0L!
+0M!
+0N!
+0O!
+0P!
+0Q!
+xR!
+xS!
+xT!
+xU!
+0V!
+xW!
+xX!
+xY!
+xZ!
+x[!
+x\!
+x]!
+x^!
+x_!
+x`!
+xa!
+$end
+#1000000

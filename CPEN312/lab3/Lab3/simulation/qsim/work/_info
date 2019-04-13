@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Quartus/Lab3/simulation/qsim
+Elab3
+Z1 w1549079972
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 OGn598C_0mX<WSGfCb?AK2
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 CcdNAEi>PYH4@n><]NQ]V2
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 QZo1Vh6en2ZO3=hNmAfQ>0
+R0
+Z9 8Lab3.vho
+Z10 FLab3.vho
+l0
+L36
+V4J_IDG2D514DFWMAQ`dFO2
+!s100 RRP[CHW[OCQS:UHL`NDZ[2
+Z11 OV;C;10.5b;63
+32
+Z12 !s110 1549079979
+!i10b 1
+Z13 !s108 1549079979.000000
+Z14 !s90 -work|work|Lab3.vho|
+Z15 !s107 Lab3.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 4 lab3 0 22 4J_IDG2D514DFWMAQ`dFO2
+l272
+L178
+V`3B>^`0JB=k6`][`^Mi8d2
+!s100 BF4=VSB@WokG<i2I_<KFT2
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Elab3_vhd_vec_tst
+Z18 w1549079971
+R6
+R7
+R0
+Z19 8Waveform.vwf.vht
+Z20 FWaveform.vwf.vht
+l0
+L31
+VhT>=L[@b@EC6OQfQN2RZ30
+!s100 T@7g8Nc_DdC8;kFNIAf[`0
+R11
+32
+Z21 !s110 1549079980
+!i10b 1
+R13
+Z22 !s90 -work|work|Waveform.vwf.vht|
+Z23 !s107 Waveform.vwf.vht|
+!i113 1
+R16
+R17
+Alab3_arch
+R6
+R7
+DEx4 work 16 lab3_vhd_vec_tst 0 22 hT>=L[@b@EC6OQfQN2RZ30
+l174
+L33
+Vg3LTD79SEMiNcYhUnBABF0
+!s100 EF8IDAO8Dig8]zzU6N3EF1
+R11
+32
+R21
+!i10b 1
+R13
+R22
+R23
+!i113 1
+R16
+R17
