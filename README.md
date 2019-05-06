@@ -10,4 +10,3 @@ Full course materials:
 TODO:
 - ELEC302 lab1
 - ELEC343 prelabs
-- CPEN312 lecture slides
