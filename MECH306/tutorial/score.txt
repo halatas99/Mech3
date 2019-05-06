@@ -1,0 +1,6 @@
+t1 - 5/5 - Please add a title for your report next time.
+t2 - 8/10 - No comment
+t3 - i straight up forgot to do t3 assignment. sorry guys.
+t4 - 15/15 - No comment
+t5(model desc) - 5/5 - No comment
+t5(prediction) - 3.967/5 - No comment
