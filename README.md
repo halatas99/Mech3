@@ -8,5 +8,3 @@ Full course materials:
 - MECH375
 
 TODO:
-- ELEC302 lab1
-- ELEC343 prelabs
