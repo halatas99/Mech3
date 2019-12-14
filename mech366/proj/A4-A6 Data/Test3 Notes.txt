@@ -1,0 +1,41 @@
+Test 3 Plan:
+
+Step Input of 1V:
+9:36 AM 2019-11-22 set to 1V
+
+Back to SS: 
+10:01 AM 2019-11-22 back to 0V
+
+Step Input of 3V:
+10:15 AM 2019-11-22 set to 3V
+
+Back to SS: 
+10:37 AM 2019-11-22 back to 0V
+
+Step Input of 5V: 
+10:57 AM 2019-11-22 set to 5V
+
+Back to 3V:
+11:25 AM 2019-11-22 set to 3V 
+
+Step input to 4V: 
+11:48 AM 2019-11-22 set to 4V
+
+Back to 3V: 
+12:03 PM 2019-11-22 set to 3V
+
+Test 4 Plan: 
+
+12:22 PM 2019-11-22 currently held at 3V for heater
+12:22 PM 2019-11-22 change fan from 5V to 4V
+12:48 PM 2019-11-22 at some point we went back to 5V on fan
+12:48 PM 2019-11-22 down to 3V on fan
+1:23 PM 2019-11-22 set fan back to 5V
+
+1:46 PM 2019-11-22 set both heater and fan to 4V (heater increase, fan decrease) 
+
+2:14 PM 2019-11-22 fan goes to 5V, heater goes to 2V
+
+
+
+
